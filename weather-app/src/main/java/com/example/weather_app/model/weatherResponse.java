@@ -10,7 +10,7 @@ public class weatherResponse {
     private Wind wind;
     private int timezone; // Add this field
 
-    // Getters and Setters
+    // Getters and Setters for name of the city
     public String getName() {
         return name;
     }
@@ -19,6 +19,7 @@ public class weatherResponse {
         this.name = name;
     }
 
+    //getter and setter for country code
     public Sys getSys() {
         return sys;
     }
@@ -27,6 +28,7 @@ public class weatherResponse {
         this.sys = sys;
     }
 
+    // for temperature and humidity
     public Main getMain() {
         return main;
     }
@@ -35,6 +37,7 @@ public class weatherResponse {
         this.main = main;
     }
 
+    //for desription and icon
     public List<Weather> getWeather() {
         return weather;
     }
@@ -43,6 +46,7 @@ public class weatherResponse {
         this.weather = weather;
     }
 
+    //for wind speed
     public Wind getWind() {
         return wind;
     }
@@ -51,11 +55,12 @@ public class weatherResponse {
         this.wind = wind;
     }
 
-    public int getTimezone() { // Getter for timezone
+    // Getter and setter for timezone
+    public int getTimezone() { 
         return timezone;
     }
 
-    public void setTimezone(int timezone) { // Setter for timezone
+    public void setTimezone(int timezone) { 
         this.timezone = timezone;
     }
 
